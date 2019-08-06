@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">IMC</string>
+    <string name="label_titulo">Calculadora IMC</string>
+    <string name="label_peso">Peso</string>
+    <string name="label_altura">Altura</string>
+    <string name="label_sexo">Sexo</string>
+
+
+    <string name="hint_sexo">Sexo</string>
+    <string name="label_feminino">Feminino</string>
+    <string name="label_masculino">Masculino</string>
+
+    <string name="label_abaixo_peso">Abaixo do peso</string>
+
+
+</resources>
