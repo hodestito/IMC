@@ -11,6 +11,10 @@
     <string name="label_masculino">Masculino</string>
 
     <string name="label_abaixo_peso">Abaixo do peso</string>
+    <string name="label_peso_ideal">Peso ideal</string>
+    <string name="label_acima_peso">Levemente acima do peso"</string>
+    <string name="label_obeso">Obeso</string>
+    <string name="label_muito_obeso">Muito Obeso</string>
 
 
 </resources>
