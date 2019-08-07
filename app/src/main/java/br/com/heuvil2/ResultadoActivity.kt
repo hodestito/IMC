@@ -23,6 +23,7 @@ class ResultadoActivity : AppCompatActivity() {
     private fun calcular() {
         val imc = peso / (altura * altura)
         tvIMC.text = imc.toFixed(1)
+//        tvIMC.text = String.format("%.1f", imc)
         when {
             imc < 18.5 -> {
                 tvStatusIMC.text = "R.strings.label_abaixo_peso"
