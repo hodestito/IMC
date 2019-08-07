@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         btCalcular.setOnClickListener {
             val proximaTela = Intent ( this, ResultadoActivity::class.java)
             proximaTela.putExtra( "PESO", inputPeso.text.toString())
-            proximaTela.putExtra( "ALTURA", inputPeso.text.toString())
+            proximaTela.putExtra( "ALTURA", inputAltura.text.toString())
             proximaTela.putExtra( "SEXO", spSexo.selectedItem.toString())
             startActivity(proximaTela)
         }

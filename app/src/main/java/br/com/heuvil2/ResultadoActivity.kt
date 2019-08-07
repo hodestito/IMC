@@ -25,29 +25,33 @@ class ResultadoActivity : AppCompatActivity() {
         tvIMC.text = imc.toFixed(1)
         when {
             imc < 18.5 -> {
-                tvStatusIMC.text = "R.strings.label_abaixo_peso"
+                tvStatusIMC.text = getString(R.string.label_abaixo_peso)
                 setaImagem(R.drawable.fem_abaixo)
             }
             imc < 24.9 -> {
-                tvStatusIMC.text = "Peso ideal"
+                tvStatusIMC.text = getString(R.string.label_peso_ideal)
                 setaImagem(R.drawable.fem_ideal)
             }
             imc < 29.9 -> {
-                tvStatusIMC.text = "Levemente acima do peso"
+                tvStatusIMC.text = getString(R.string.label_acima_peso)
                 setaImagem(R.drawable.fem_sobre)
             }
             imc < 34.9 -> {
-                tvStatusIMC.text = "Obeso"
+                tvStatusIMC.text = getString(R.string.label_obeso)
                 setaImagem(R.drawable.fem_obeso)
             }
             else -> {
-                tvStatusIMC.text = "Extremamente Obeso"
+                tvStatusIMC.text = getString(R.string.label_muito_obeso)
                 setaImagem(R.drawable.fem_extremo_obeso)
             }
         }
     }
 
     fun setaImagem(resourceId: Int) {
+
+//        val male = getString(R.string.label_male)
+//        val female = getString(R.string.label_female)
+
         ivIMC.setImageDrawable(
             ContextCompat.getDrawable(this,
                 resourceId))
@@ -57,5 +61,8 @@ class ResultadoActivity : AppCompatActivity() {
         peso = intent.getStringExtra("PESO").toDouble()
         altura = intent.getStringExtra("ALTURA").toDouble()
         sexo = intent.getStringExtra("SEXO")
+
+        //tvIMC.text = "weight: "+peso+"  height: "+altura+" genre: "+sexo
+
     }
 }
