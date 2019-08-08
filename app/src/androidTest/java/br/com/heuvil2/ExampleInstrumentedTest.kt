@@ -1,4 +1,4 @@
-package br.com.heuvil2
+package br.com.fiap
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("br.com.heuvil2", appContext.packageName)
+        assertEquals("br.com.fiap", appContext.packageName)
     }
 }
